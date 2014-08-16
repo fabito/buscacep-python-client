@@ -17,7 +17,7 @@ setup(
     # http://packaging.python.org/en/latest/tutorial.html#version
     version='0.1.0',
 
-    description='Biblioteca utilitária que ',
+    description='Biblioteca utilitária para a utilização do serviço de busca de CEPs disponibilizado no website do Correio',
     long_description=long_description,
 
     # The project's main homepage.
