@@ -1,13 +1,14 @@
-A sample Python project
-=======================
+BuscaCep
+========
 
-This is the description file for the project.
+O site dos Correios disponibiliza gratuitamente um ótimo serviço para busca online de CEPs.
+Porém, essa é a única forma de acessá-lo: via página HTML.
+Não existe, nem é exposta, nenhuma API que facilite a integração desse serviço com outras aplicações.
 
-The file should use UTF-8 encoding and be written using ReStructured Text. It
-will be used to generate the project webpage on PyPI, and should be written for
-that purpose.
+Para possibilitar esse tipo de integração, criei o buscacep que nada mais é que um componente python
+que abstrai a complexidade de:
 
-Typical contents for this file would include an overview of the project, basic
-usage examples, etc. Generally, including the project changelog in here is not
-a good idea, although a simple "What's New" section for the most recent version
-may be appropriate.
+- Fazer a requisição HTTP (GET) passando os parâmetros necessários e;
+- Processar a resposta - extraindo os dados de CEP do HTML retornado.
+
+Internamente utilizo a biblioteca beautifulsoup4 para auxiliar no Web Scraping.
